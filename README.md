@@ -4,6 +4,6 @@
 * Has State
 * imports and exports
 * React Dev Tools
-* Naming conventsions
+* Naming conventions
 * map() is used a lot in React
 
