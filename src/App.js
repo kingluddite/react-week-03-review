@@ -15,11 +15,12 @@ export class App extends Component {
   }
 
   render() {
+    const { usStates } = this.state;
     return (
       <div className="container">
-        <Header states={this.state.usStates} />
-        <UnitedStates states={this.state.usStates} />
-        <Footer states={this.state.usStates} />
+        <Header states={usStates} />
+        <UnitedStates states={usStates} />
+        <Footer states={usStates} />
       </div>
     );
   }

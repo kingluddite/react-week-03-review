@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Footer(props) {
-  const mStates = props.states.filter(
+function Footer({ states }) {
+  const mStates = states.filter(
     (ms) => ms.name.charAt(0).toLowerCase() === 'm'
   );
-  console.log(mStates);
+  // console.log(mStates);
   return (
     <div>
       <h2>My Footer</h2>

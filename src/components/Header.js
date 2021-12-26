@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Header(props) {
-  const numStatesWithI = props.states.reduce((a, c) => {
+function Header({ states }) {
+  const numStatesWithI = states.reduce((a, c) => {
     return a + c.name.length;
   }, 0);
   console.log(numStatesWithI);
