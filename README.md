@@ -1,7 +1,7 @@
 # React Week 03 Review
 
-# Functional Components
-* Add bootstrap
-* fontsourc v typeface
-  - https://www.npmjs.com/package/typefaces only has 11 weekly downloads (this lets you know that this package is not being used anymore)
- * View the github repo - https://github.com/kyleamathews/typefaces
+# React Router
+* Adding react-router
+* Add pages
+* Add routers with all routes 
+* Show (different than those that don't need props) how to pass props to a route that needs them 
