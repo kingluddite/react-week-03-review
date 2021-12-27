@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import SingleState from './pages/SingleState';
 
 export class App extends Component {
   constructor(props) {
@@ -30,6 +31,13 @@ export class App extends Component {
               exact
               path="/us-states"
               render={() => <UnitedStates states={this.state.usStates} />}
+            />
+            <Route
+              exact
+              path="/us-states/:stateId"
+              render={(props) => (
+                <SingleState {...props} states={this.state.usStates} />
+              )}
             />
             <Redirect to="/" />
           </Switch>

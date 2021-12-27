@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function UnitedStates(props) {
   return (
@@ -6,9 +7,12 @@ function UnitedStates(props) {
       <h1>United States</h1>
       <ul>
         {props.states
-          .map((s, index) => (
-            <li key={index}>
-              <strong>name:</strong> {s.name} - {s.code}
+          .map((s) => (
+            <li key={s.id}>
+              <strong>name:</strong>{' '}
+              <Link to={`/us-states/${s.id}`}>
+                {s.name} - {s.code}
+              </Link>
             </li>
           ))
           .sort()
